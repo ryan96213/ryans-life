@@ -1,0 +1,235 @@
+@media (max-width: 700px) {
+    .main {
+        height: 56vw;
+    }
+
+    .menu {
+        position: absolute;
+        right: 12px;
+        top: 5px;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu ul li {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 4vw;
+        color: white;
+        font-family: "Nanum Pen Script", cursive;
+        margin-top: 6px;
+    }
+
+    .title_desc {
+        font-size: 1.5vw;
+        margin-top: 3px;
+        color: white;
+        font-family: "Nanum Pen Script", cursive;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .bt_section {
+        margin-top: 4px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bt_section .bt {
+        width: 60px;
+        height: 13px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 6px;
+        border: 2px solid white;
+        border-radius: 40px;
+        cursor: pointer;
+        text-decoration: 0.3s;
+    }
+
+    .bt_section .bt:hover {
+        background-color: white;
+        color: black;
+        width: 70px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bt_section .bt:hover a {
+        color: black;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .card_items {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    .card_item {
+        margin: 15px;
+    }
+
+    .card_item img {
+        width: 100%;
+    }
+
+    .card_item .title {
+        font-size: 5px;
+        font-weight: bold;
+        color: black;
+        font-family: sans-serif;
+    }
+
+    .card_item .profile {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 6px;
+        font-family: sans-serif;
+    }
+
+    .card_item .profile img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 3px;
+    }
+
+    .main2 {
+        padding: 25px 25px;
+    }
+
+    .main2 .section_title {
+        font-size: 16px;
+        margin-top: -5px;
+        margin-bottom: 30px;
+    }
+
+    .main2 .section_sub_title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .main2 .step_items {
+        flex-direction: column;
+    }
+
+    .main2 .step_item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .main2 .step_item .step_title {
+        font-size: 11px;
+    }
+
+    .main2 .step_item .step_step {
+        font-size: 11px;
+    }
+
+    .main2 .step_item .step_desc {
+        font-size: 11px;
+    }
+
+    .main2 .step_deco .st_circle {
+        width: 6px;
+        height: 6px;
+        background-color: black;
+        border-radius: 50%;
+        margin-right: 12px;
+        margin-bottom: 15px;
+    }
+
+    .main2 .step_deco .st_line {
+        width: 200px;
+        height: 1px;
+        background-color: black;
+        margin-bottom: 15px;
+    }
+
+    .main2 .step_item:nth-child(2n) {
+        margin-top: 0px;
+    }
+
+    .main2 .step_item:hover {
+        transform: translateY(0px) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+
+    .main3 {
+        display: flex;
+    }
+
+    .main3_img {
+        width: 50%;
+        background-image: url(images/chineseapp.jpg);
+        background-size: contain;
+    }
+
+    .main3_info {
+        padding: 0px 0px;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    .main3_info .info_item {
+        margin-bottom: 19px;
+    }
+
+    .main3_info .info_item .info_title {
+        font-size: 11px;
+        font-family: "Poor Story", cursive;
+        font-weight: bold;
+    }
+
+    .main3_info .info_item .info_contents {
+        font-size: 10px;
+        line-height: 30px;
+        margin-top: 10px;
+        font-family: "Poor Story", cursive;
+    }
+
+    .main3_info .info_item.info_last_item {
+        margin-bottom: 10px;
+    }
+
+    .main4 .email {
+        color: white;
+        margin-left: 12px;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+
+    .main4 .location {
+        color: white;
+        margin-left: 12px;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+
+    .main4 .rights {
+        color: white;
+        margin-left: 12px;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+}
