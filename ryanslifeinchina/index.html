@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 라이언의 즐거운 중국어 세상 </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        .main {
+            margin: 0%;
+            padding: 0%;
+            height: 55vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-image: url('images/channelart.jpg');
+            background-size: cover;
+            flex-direction: column;
+        }
+
+        .strong {
+            color: red;
+        }
+
+        .strong2 {
+            color: blue;
+        }
+
+        ul {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu {
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-left: 18px;
+            font-size: 22px;
+        }
+
+        .title {
+            font-size: 5vw;
+            color: white;
+            font-family: 'Nanum Pen Script', cursive;
+            margin-top: 13px;
+        }
+
+        .title_desc {
+            font-size: 2vw;
+            margin-top: 30px;
+            color: white;
+            font-family: 'Nanum Pen Script', cursive;
+            justify-content: center;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .bt_section {
+            margin-top: 23px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bt_section .bt {
+            width: 100px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-size: 22px;
+            border: 2px solid white;
+            border-radius: 40px;
+            cursor: pointer;
+            text-decoration: 0.3s;
+        }
+
+        .bt_section .bt:hover {
+            background-color: white;
+            color: black;
+            width: 120px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .bt_section .bt:hover a {
+            color: black;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .card_items {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 55px;
+        }
+
+        .card_item {
+            width: calc(25% - 30px);
+            margin: 15px;
+        }
+
+        .card_item img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .card_item .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        .card_item .profile {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        .card_item .profile img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .main2 {
+            background-image: url('images/1717.png');
+            padding: 178px 110px;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        .main2 .section_sub_title {
+            font-size: 23px;
+        }
+
+        .main2 .section_title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: default;
+        }
+
+        .main2 .section_title a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .main2 .step_items {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main2 .step_item {
+            width: 18%;
+            display: inline-block;
+            transition-duration: 0.2s;
+            cursor: default;
+        }
+
+        .main2 .step_item .step_step {
+            font-size: 17px;
+            margin-top: 0px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .main2 .step_item .step_desc {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 8px;
+        }
+
+        .main2 .step_deco {
+            display: flex;
+            align-items: center;
+        }
+
+        .main2 .step_deco .st_circle {
+            width: 8px;
+            height: 8px;
+            background-color: black;
+            border-radius: 50%;
+            margin-right: 12px;
+            margin-bottom: 15px;
+        }
+
+        .main2 .step_deco .st_line {
+            width: 200px;
+            height: 2px;
+            background-color: black;
+            margin-bottom: 15px;
+        }
+
+        .main2 .step_item:nth-child(2n) {
+            margin-top: 60px;
+        }
+
+        .main2 .step_item:hover {
+            transform: translateY(50px) rotate(20deg) scale(1.2);
+            opacity: 0.5;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        .main3 {
+            display: flex;
+        }
+
+        .main3_img {
+            width: 50%;
+            background-image: url(images/chineseapp.jpg);
+            background-size: contain;
+        }
+
+        .main3_info {
+            flex: 1;
+            padding: 0px 0px;
+            margin-left: 23px;
+            margin-top: 30px;
+        }
+
+        .main3_info .info_item {
+            margin-bottom: 100px;
+        }
+
+        .main3_info .info_item .info_title {
+            font-size: 34px;
+            font-weight: 600px;
+            font-family: 'Poor Story', cursive;
+        }
+
+        .main3_info .info_item .info_contents {
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 20px;
+            font-family: 'Poor Story', cursive;
+        }
+
+        .main3_info .info_item.info_last_item {
+            margin-bottom: 50px;
+        }
+
+        .main4 {
+            background-image: url('images/111111.png');
+        }
+
+        .main4 .email {
+            color: white;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .main4 .location {
+            color: white;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .main4 .rights {
+            color: white;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./mobile.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">[라이언의 즐거운 중국어 세상]</div>
+        <div class="title_desc"><span class='strong'>
+                중국어</span>를 <span class='strong2'>쉽고 재미있게</span> 배우자!<br />
+            중국어 회화 / 중드&영화&게임 / 여행 브이로그
+            <div class="menu">
+                <ul>
+                    <li> <a href="#List">1:1문의</a></li>
+                    <li> <a href="#List">오시는 길</a></li>
+                </ul>
+            </div>
+            <div class="bt_section">
+                <div class='bt'><a href="https://www.youtube.com/channel/UCavPWmJlzqtph2Yn7_ebRtg">유튜브 보러가기</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card_items">
+        <div class="card_item">
+            <img src='images/newhsk.jpg'>
+            <div class="title">[이달의 중국어 이슈]달라지는 新HSK! </div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/concern.jpg'>
+            <div class="title">[중국어 고민상담소]고민을 말해봐</div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/surprise.jpg'>
+            <div class="title">중국에 살면 깜놀하는 순간 TOP5</div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/novel.png'>
+            <div class="title">[중국 소설추천]허삼관 매혈기, 위화의 역작</div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/lol.jpg'>
+            <div class="title">[중국롤]정글 판테온 유저의 중국서버 체험기 </div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/lol2.jpg'>
+            <div class="title">[롤토체스]한국에서 중국어 설정하는 법</div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/star1.jpg'>
+            <div class="title">[빠른무한]스타 중국어 더빙판을 해보았다</div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+        <div class="card_item">
+            <img src='images/star2.png'>
+            <div class="title">[공허의 유산]스타2로 배우는 중국어</div>
+            <div class="profile">
+                <img src='images/logo.png'>
+                라이언 Ryan
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class='section_sub_title'>2021년 라이언의 중국어 회화</div>
+        <div class='section_title'><a href="https://www.youtube.com/channel/UCavPWmJlzqtph2Yn7_ebRtg">왕초보 탈출 중국어</a></div>
+        <div class='step_items'>
+            <div class='step_item'>
+                <div class='step_deco'>
+                    <div class='st_circle'></div>
+                    <div class='st_line'></div>
+                </div>
+                <div class='step_step'>[STEP 1 - 개념 중국어]</div>
+                <div class='step_desc'>쉽고 재미있는 설명으로 <br /> 중국어를 천천히 알아보자!</div>
+            </div>
+            <div class='step_item'>
+                <div class='step_deco'>
+                    <div class='st_circle'></div>
+                    <div class='st_line'></div>
+                </div>
+                <div class='step_step'>[STEP 2 - 패턴 중국어]</div>
+                <div class='step_desc'>자주 사용하는 패턴으로 <br /> 롤플레잉 연습해보자! </div>
+            </div>
+            <div class='step_item'>
+                <div class='step_deco'>
+                    <div class='st_circle'></div>
+                    <div class='st_line'></div>
+                </div>
+                <div class='step_step'>[STEP 3 - 교과서 중국어]</div>
+                <div class='step_desc'>수능과 HSK 문제에서 나오는 <br />쉬운 표현을 알아보자!</div>
+            </div>
+            <div class='step_item'>
+                <div class='step_deco'>
+                    <div class='st_circle'></div>
+                    <div class='st_line'></div>
+                </div>
+                <div class='step_step'>[STEP 4 - 생활 중국어]</div>
+                <div class='step_desc'>현지 브이로그 영상과 함께 <br />중국어를 실제로 말해보자! </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="main3_img"></div>
+        <div class="main3_info">
+            <div class="info_item">
+                <div class="info_item">
+                    <div class="info_title">[공부와 게임을 동시에?] </div>
+                    <div class="info_contents">자신만의 캐릭터로 레벨업하며, 중국어 회화도 늘리세요!</div>
+                </div>
+                <div class="info_item">
+                    <div class="info_title">[다양한 등장인물과 장소]</div>
+                    <div class="info_contents">중국인 친구, 교수님, 영화관 알바생, 식당 종업원 등 다채로운 등장인물! </div>
+                </div>
+                <div class="info_title">[실제 상황 에피소드]</div>
+                <div class="info_contents">라이언이 현지 생활하며 겪은 재미있고 황당한 에피소드!</div>
+            </div>
+
+            <div class="info_item info_last_item">
+                <div class="info_title">[지금 가입하면 10포인트 증정]</div>
+                <div class="info_contents">히든 미션과 함께 숨겨진 장소 개방 가능! </div>
+            </div>
+        </div>
+    </div>
+    <div class="main4"><br /><br />
+        <a id="List"></a><span class='email'> E-mail : ryan96213@gmail.com</span><br />
+        <span class='location'>Location : 울산광역시 남구 강남로348</span><br />
+        <span class='rights'>ⓒ RYAN'S LIFE IN CHINA. ALL RIGHTS RESERVED</span><br />
+        <br /><br />
+    </div>
+</body>
+
+</html>
